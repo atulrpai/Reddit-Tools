@@ -1,0 +1,25 @@
+{
+	"name": "Reddit Tools",
+	"description": "A collection of useful automations for your reddit activities.",
+	"version": "1.0.0",
+	"manifest_version": 3,
+	"icons": {
+		"16": "/images/app.png",
+		"32": "/images/app.png",
+		"48": "/images/app.png",
+		"128": "/images/app.png"
+	},
+	"permissions": [
+        	"tabs",
+        	"scripting"
+	],
+	"action": {
+        	"default_popup": "/views/popup.html"
+        },
+	"background": {
+		"service_worker": "/scripts/background.js"
+	},
+	"host_permissions": [
+		"https://www.reddit.com/*"
+	]
+}
